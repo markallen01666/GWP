@@ -1,0 +1,133 @@
+/* Great War Project styling
+   For MVCAP by M Allen: Freelance Web Developer - 2017
+*/
+
+/* Set link behaviour */
+a {
+  text-decoration : none;
+  color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Frontpage styling */
+.frontPage {
+  font-family: 'Raleway', sans-serif;
+  background: #FFFFFF url(../images/poppies.jpg);
+  background-position: center top;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Font for front page GWP name */
+.nameGWP {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 7.5vw;
+  overflow-wrap: break-word;
+}
+
+/* Fade in coloured overlay on front page*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#outer {
+  color: #FFFFFF;
+  background-color: #3C0000; /* Fallback option */
+  animation: fadein 2s ease-in 1s;
+  animation-fill-mode: backwards;
+  background-color: rgba(60, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Offset from page top on front page */
+.frontPage .offset {
+  margin-top: 10%;
+}
+
+/* Link to show site content from front page */
+.frontPage .buttonFrame {
+  color: #FFFFFF;
+    outline: 1px solid #FFFFFF;
+    padding-bottom: 1.5vh;
+    text-decoration: none;
+}
+
+/* Content page settings */
+.jumbotron {
+  background-color: #FFFFFF;
+}
+
+/* Main content page styling */
+.GWPmain {
+  color: #000000;
+  background: #FFFFFF;
+  overflow-wrap: break-word;
+}
+
+.GWPband {
+  width: 100%;
+}
+
+.GWPmain {
+  font-family: 'Raleway', sans-serif;
+}
+
+.GWPmain h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #3C0000;
+}
+
+.GWPmain h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #3C0000;
+}
+
+.GWPmain p {
+  font-family: 'Raleway', sans-serif;
+  text-align: justify;
+}
+
+.GWPmainThumb {
+  width: 80%;
+  margin-bottom: 2%;
+}
+
+/* Offset from page top on main content page */
+.GWPmain .offset {
+  margin-top: 2%;
+}
+
+.GWPmain .form-group{
+    float: left;
+    width: 80%;
+}
+
+.GWPmain .contactCell {
+  width: 100%;
+}
+
+.GWPmain .GWPbtn {
+  background-color: #3C0000 !important;
+  color: #FFFFFF !important;
+}
+
+#GWPfooter {
+  background-color: #3C0000;
+  color: #FFFFFF;
+  padding: 2.5%;
+  margin-top: 5%;
+  text-decoration: none;
+}

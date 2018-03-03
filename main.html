@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- The Great War Project
+    Website redevelopment using HTML5, CSS3, Javascript, and Bootstrap replacing original site produced using Weebly
+
+    GWP main content page
+
+    For MVCAP by Mark Allen - Freelance Web Developer - 2017
+-->
+
+<html>
+<head>
+  <title>Great War Project</title>
+<!-- Set charset etc., load fonts, script, stylesheet, Bootstrap 3 and jQuery 3 -->
+  <!-- Charset and viewport -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poiret One" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <!-- Latest Bootstrap 3 and jQuery 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Site specific CSS and Javascript -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" src="./js/script.js"></script>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container GWPmain">
+      <div class="row">
+        <a href="http://greatwarproject.org.uk/">
+          <div class="col-sm-12">
+            <h1>The Great War Project</h1>
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <!-- Top of page image -->
+        <img src="./images/poppies-band.jpg" alt="Poppy Field" class="GWPband offset img-responsive" />
+      </div>
+      <div class="row offset">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>About us</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                The Great War Project (GWP) started in late 2013 to help support community efforts to mark the centenary of the First World War. Our work covers the town of Malmesbury and the surrounding villages in North-West Wiltshire.
+              </p>
+              <p>
+                We want to bring people together through events and projects looking at the experiences of communities before, during, and after the First World War. We're not just looking at their loss and sacrifice but also the world they lived in and the lives they led.
+              </p>
+              <p>
+                The GWP works across Wiltshire Council's "Malmesbury Community Area."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Community Projects</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                We've organised several opportunities for leaders of community projects to get together, share ideas, and coordinate their schedules to avoid conflicts. We've put together several displays that have been hosted in the area, including Malmesbury library, to promote what's happening and share stories about this time.
+              </p>
+              <p>
+                We've also set up and provided moderators for a Facebook group since 2014. This is a space where members of the community can share information about what's happening across our area.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Project Support</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                If you're planning an event, we can help. We can give advice on how to promote your project, provide a free website to showcase your work, and have a wide range of contacts in the community who might be able to help with resources and information. We can give advice about where to access free resources and how they can be used - for example the excellent images (including recruitment posters) available for non-commercial use from the Imperial War Museum. We also have a very limited pot of money available which can help with the costs of getting a project up and running. Just get in touch if you'd like to know more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Poppy image separator -->
+        <img src="./images/poppies-band-fine.jpg" alt="" class="GWPband offset img-responsive" />
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Contact us</h2>
+        </div>
+      </div>
+      <!-- Contact form linked to formspree.io - functionality in Javascript -->
+      <div class="row">
+        <div class="col-sm-8">
+          <form id="contactform" method="POST">
+            <div class="row">
+              <label class="control-label col-sm-3 col-xs-12">Name:</label>
+              <div class="form-group col-sm-9 col-xs-12">
+                <input class="contactCell" type="text" name="name" placeholder="Please enter your name here">
+              </div>
+            </div>
+            <div class="row">
+              <label class="control-label col-sm-3 col-xs-12">Email:</label>
+              <div class="form-group col-sm-9 col-xs-12">
+                <input type="email" class="contactCell" name="_replyto" placeholder="Please enter your email address here">
+              </div>
+            </div>
+            <div class="row">
+              <label class="control-label col-sm-3 col-xs-12">Message:</label>
+              <div class="form-group col-sm-9 col-xs-12">
+                <textarea rows="6" class="contactCell" name="message" placeholder="Please enter your message here"></textarea>
+              </div>
+            </div>
+            <input type="hidden" name="_subject" value="GWP Website contact" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <div class="row">
+              <div class="form-group form-group-btn col-xs-12">
+                <button class="btn btn-lg GWPbtn" type="submit" value="Send">Send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-4">
+          <div class="row">
+            <div class="col-xs-12">
+              <img src="./images/GWP-Logo.svg" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer with MVCAP link and webdev link -->
+    <footer id="GWPfooter" class="offset col-xs-12">
+      <div class="col-sm-8 col-xs-12">
+        <h5><strong>MVCAP</strong></h5>
+        <h5>
+          A Charitable Incorporated Organisation registered with the Charity Commission (Reg No: 1155592)
+        </h5>
+        <a href="http://mvcap.org.uk" target="_blank"><h5><strong>mvcap.org.uk</strong></h5></a>
+        <h6>
+          © 2017 - Copyright MVCAP
+        </h6>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <h5>
+          Website by:
+        </h5>
+        <h5>
+          Mark Allen - Freelance Web developer
+        </h5>
+        <h5>
+          <a href="https://markallenwebdeveloper.co.uk/" target="_blank"><strong>markallenwebdeveloper.co.uk</strong></a>
+        </h5>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
