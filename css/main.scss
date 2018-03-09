@@ -1,0 +1,105 @@
+/* Great War Project styling for main page
+   For MVCAP by M Allen: Freelance Web Developer - 2018
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  user-select: none;
+  text-decoration: none;
+  /* Parallax fixed background */
+  background: #FFFFFF url(../images/poppies-cover.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+  width:100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "a a a a a a a a a a a a"
+    "c c c c c c p p p p p p"
+    "e e e e e e e e e e e e"
+    "f f f f f f f f f f f f";
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "a a a a a a a a a a a a"
+      "c c c c c c c c c c c c"
+      "p p p p p p p p p p p p"
+      "e e e e e e e e e e e e"
+      "f f f f f f f f f f f f";
+  }
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transluscent cell background */
+.cell {
+  background-color: rgba(255, 255, 204, 0.7);
+  padding: 5px;
+}
+
+/* Responsive image fill */
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Define grid-templaate-areas */
+header {
+  grid-area: h;
+  margin: 0;
+  padding: 0;
+}
+#community {
+  grid-area: c;
+}
+#project {
+  grid-area: p;
+}
+#about {
+  grid-area: a;
+}
+#email {
+  grid-area: e;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 20px;
+  text-align: center;
+}
+footer {
+  grid-area: f;
+  text-align: center;
+}
+
+#send-button {
+  font-size: 14px;
+}
+.contactCell {
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
