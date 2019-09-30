@@ -10,4 +10,3 @@ The landing page displays a full-screen background image of a field of poppies w
 
 The main information page is a responsive Bootstrap three-column layout, changing to single-column for small displays. The contact form processing is handled using Formspree.
 
-Link: http://greatwarproject.org.uk
